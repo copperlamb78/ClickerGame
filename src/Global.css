@@ -1,0 +1,36 @@
+:root {
+    --white: #fff;
+    --black: #000000;
+    --blue-300: #001c6e;
+    --blue-500: #002db4;
+    --blue-700: #0040ff;
+    --red-900: #ff0000;
+    --red-500: #a50000;
+    --gray: #636363;
+    --green: #00ff14;
+    --green-100: #00bd0f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    background-color: var(--blue-300);
+    color: var(--white);
+    -webkit-font-smoothing: antialiased;
+}
+
+body, inputm textarea, button {
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button {
+    cursor: pointer;
+}
