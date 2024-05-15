@@ -106,7 +106,7 @@ export function Game() {
             <table className={styles.upgradeArea}>
                 <tr>
                     <td>
-                        <button disabled={money < 50 | upgradeClickAdd == 200} onClick={handle1Upgrade} type='button'>Upgrade</button>
+                        <button disabled={money < upgrade1Price | upgradeClickAdd == 200} onClick={handle1Upgrade} type='button'>Upgrade</button>
                     </td>
                     <td>
                         <p>Click +{upgrade1} MaxUpgrade=200</p>
@@ -115,7 +115,7 @@ export function Game() {
                 </tr>
                 <tr>
                     <td>
-                    <button disabled={money < 500} onClick={handle2Upgrade} type='button'>Upgrade</button>
+                    <button disabled={money < upgrade2Price} onClick={handle2Upgrade} type='button'>Upgrade</button>
                     </td>
                     <td>
                         <p>Click per second +{upgrade2}</p>
@@ -124,7 +124,7 @@ export function Game() {
                 </tr>
                 <tr>
                     <td>
-                    <button disabled={money < 1500} onClick={handle3Upgrade} type='button'>Upgrade</button>
+                    <button disabled={money < upgrade3Price} onClick={handle3Upgrade} type='button'>Upgrade</button>
                     </td>
                     <td>
                         <p>Click per second +{upgrade3}</p>
@@ -133,7 +133,7 @@ export function Game() {
                 </tr>
                 <tr>
                     <td>
-                    <button disabled={money < 5000} onClick={handle4Upgrade} type='button'>Upgrade</button>
+                    <button disabled={money < upgrade4Price} onClick={handle4Upgrade} type='button'>Upgrade</button>
                     </td>
                     <td>
                         <p>Click per second +{upgrade4}</p>
@@ -142,7 +142,7 @@ export function Game() {
                 </tr>
                 <tr>
                     <td>
-                    <button disabled={money < 15000} onClick={handle5Upgrade} type='button'>Upgrade</button>
+                    <button disabled={money < upgrade5Price} onClick={handle5Upgrade} type='button'>Upgrade</button>
                     </td>
                     <td>
                         <p>Click per second +{upgrade5}</p>
@@ -151,7 +151,7 @@ export function Game() {
                 </tr>
                 <tr>
                     <td>
-                    <button disabled={money < 25000} onClick={handle6Upgrade} type='button'>Upgrade</button>
+                    <button disabled={money < upgrade6Price} onClick={handle6Upgrade} type='button'>Upgrade</button>
                     </td>
                     <td>
                         <p>Click per second +{upgrade6}</p>
