@@ -109,9 +109,10 @@ export function Game() {
 
         <div className={styles.gameArea}>
             <div className={styles.gameBox}>
-                <h1 className={styles.count}>R${parseFloat(money).toFixed(2)}</h1>
-                <p>Power click = {upgradeClickAdd}</p>
-                <p>Click per second {parseFloat(clickPerSecondAmount).toFixed(1)}</p>
+                <h1 className={styles.count}>Pizza {parseFloat(money).toFixed(2)}</h1>
+                <p>Pizza production per click: {upgradeClickAdd}</p>
+                <p>Pizza per second: {parseFloat(clickPerSecondAmount).toFixed(1)}</p>
+                <p>Rebirth: {rebirth}</p>
                 <button onClick={handleClick} type='button' className={styles.clickButton}>
                     <img src={pizzaimg} alt='Foto de uma pizza de pepperoni' />
                 </button>
@@ -132,8 +133,9 @@ export function Game() {
                         <button disabled={money < upgrade1Price} onClick={handle1Upgrade} type='button'>Upgrade</button>
                     </td>
                     <td>
+                        <p>Rolo de massa melhor</p>
                         <p>Click +{upgrade1}</p>
-                        <p>R${parseFloat(upgrade1Price).toFixed(2)}</p>
+                        <p>{parseFloat(upgrade1Price).toFixed(2)}</p>
                     </td>
                 </tr>
                 <tr>
@@ -142,7 +144,7 @@ export function Game() {
                     </td>
                     <td>
                         <p>Click per second +{upgrade2}</p>
-                        <p>R${parseFloat(upgrade2Price).toFixed(2)}</p>
+                        <p>{parseFloat(upgrade2Price).toFixed(2)}</p>
                     </td>
                 </tr>
                 <tr>
@@ -151,7 +153,7 @@ export function Game() {
                     </td>
                     <td>
                         <p>Click per second +{upgrade3}</p>
-                        <p>R${parseFloat(upgrade3Price).toFixed(2)}</p>
+                        <p>{parseFloat(upgrade3Price).toFixed(2)}</p>
                     </td>
                 </tr>
                 <tr>
@@ -160,7 +162,7 @@ export function Game() {
                     </td>
                     <td>
                         <p>Click per second +{upgrade4}</p>
-                        <p>R${parseFloat(upgrade4Price).toFixed(2)}</p>
+                        <p>{parseFloat(upgrade4Price).toFixed(2)}</p>
                     </td>
                 </tr>
                 <tr>
@@ -169,7 +171,7 @@ export function Game() {
                     </td>
                     <td>
                         <p>Click per second +{upgrade5}</p>
-                        <p>R${parseFloat(upgrade5Price).toFixed(2)}</p>
+                        <p>{parseFloat(upgrade5Price).toFixed(2)}</p>
                     </td>
                 </tr>
                 <tr>
@@ -178,7 +180,7 @@ export function Game() {
                     </td>
                     <td>
                         <p>Click per second +{upgrade6}</p>
-                        <p>R${parseFloat(upgrade6Price).toFixed(2)}</p>
+                        <p>{parseFloat(upgrade6Price).toFixed(2)}</p>
                     </td>
                 </tr>
                 <tr>
@@ -187,7 +189,7 @@ export function Game() {
                     </td>
                     <td>
                         <p>Reset all, but gain 2x</p>
-                        <p>R${parseFloat(rebirthPrice).toFixed(2)}</p>
+                        <p>{parseFloat(rebirthPrice).toFixed(2)}</p>
                     </td>
                 </tr>
 
