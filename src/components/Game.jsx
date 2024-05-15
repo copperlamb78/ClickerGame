@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import styles from './Game.module.css'
-
+import pizzaimg from './assets/Pizzabutton.png'
 
 
 
@@ -113,8 +113,11 @@ export function Game() {
                 <p>Power click = {upgradeClickAdd}</p>
                 <p>Click per second {parseFloat(clickPerSecondAmount).toFixed(1)}</p>
                 <button onClick={handleClick} type='button' className={styles.clickButton}>
-                    
+                    <img src={pizzaimg} alt='Foto de uma pizza de pepperoni' />
                 </button>
+                 
+                    
+                
             </div>
             <div className={styles.progressBarArea}>
                 <div className={styles.goalArea}>
